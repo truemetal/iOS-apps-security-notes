@@ -4,6 +4,13 @@ The purpose of this repo is to serve as dump of notable and useful things about 
 Originally borned from a question "how safe it is to store some password / api key as text in app's source codes". 
 **Pull requests are welcome.**
 
+### Contents
+
+- [App Package](#app-package)
+- [Attemting to peek into app binary](#attemting-to-peek-into-app-binary)
+- [Peeking into unencrypted app binary](#peeking-into-unencrypted-app-binary)
+- [TODO](#todo)
+
 ### App package
 
 Apps are stored as `.ipa` file. When you export app archive to submit to Apple's iTunesConnect it's being exported as .ipa file. When you backup your device, all apps are being saved as `ipa`s in `Mobile Applications` folder on your drive. 
@@ -18,7 +25,7 @@ In `Payload` folder is most interesting part - app package; right-click and `sho
 
 In this case the app's binary file is `ObfuscationTestApp`. This folder would also contain images, fonts, other files included. 
 
-### Peeking into app binary
+### Attemting to peek into app binary
 
 There are several tools I know you can use to peek into app binary: `strings`, `otool -ov`, [class-dump](http://stevenygard.com/projects/class-dump/) and disassemblers like `hopper` 
 
@@ -46,7 +53,7 @@ And you can get even more interesting things with `hopper`. Here's for example c
 
 ![screen shot 2016-04-12 at 22 33 07](https://cloud.githubusercontent.com/assets/2472186/14473012/b0e47bb2-00fe-11e6-8a92-876b0a9f1189.png)
 
-## TODO: 
+### TODO: 
 
 - Find a way to decrypt an app you have downloaded on your iphone from app store. What a hacker needs to do that? 
 - For investigation purposes find out a way to decrypt your own app for which you have provisioning profiles and that is submitted with your apple developer's account  
